@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  クイズの問題リスト
+  ・<question> 1つが1問です。上から順に出題されます。
+  ・type    : text（自由入力）／ ox（○×）／ choice（選択式）。省略すると text
+  ・seconds : 回答時間（秒）。省略すると 自由入力60秒、○×・選択式30秒
+  ・<text>   : 問題文（改行もそのまま反映されます）
+  ・<choice> : 選択肢（選択式のみ。2〜4個、上から A・B・C・D）
+  ・<answer> : 正解。複数の正解を認めるときは <answer> を複数書きます
+               ○×は ○ か ×、選択式は A〜D の記号で書きます
+  ・<note>   : 正解発表のときに表示する補足（省略可）
+  ・文中で & < > を使うときは &amp; &lt; &gt; と書きます
+-->
+<quiz>
+
+  <question type="text" seconds="60">
+    <text>日本で一番高い山は？</text>
+    <answer>富士山</answer>
+    <answer>ふじさん</answer>
+    <note>標高は3776メートルです。</note>
+  </question>
+
+  <question type="ox" seconds="20">
+    <text>富士山の高さは3000メートル以上である。○か×か？</text>
+    <answer>○</answer>
+    <note>富士山の標高は3776メートルのため。</note>
+  </question>
+
+  <question type="choice" seconds="30">
+    <text>「吾輩は猫である」の作者は？</text>
+    <choice>森鴎外</choice>
+    <choice>夏目漱石</choice>
+    <choice>芥川龍之介</choice>
+    <choice>太宰治</choice>
+    <answer>B</answer>
+    <note>1905年に発表された夏目漱石のデビュー作です。</note>
+  </question>
+
+  <question type="text">
+    <text>
+      次の漢字の読み方は？
+      「薔薇」
+    </text>
+    <answer>ばら</answer>
+  </question>
+
+</quiz>

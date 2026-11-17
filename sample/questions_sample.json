@@ -1,0 +1,11 @@
+[
+  {"type": "text", "question": "日本で一番高い山は？", "answers": ["富士山", "ふじさん"], "seconds": 60,
+   "note": "標高は3776メートルです。"},
+  {"type": "ox", "question": "富士山の高さは3000メートル以上である。○か×か？", "answers": "○", "seconds": 20,
+   "note": "富士山の標高は3776メートルのため。"},
+  {"type": "choice", "question": "「吾輩は猫である」の作者は？",
+   "choices": ["森鴎外", "夏目漱石", "芥川龍之介", "太宰治"], "answers": "B", "seconds": 30,
+   "note": "1905年に雑誌「ホトトギス」で発表されたデビュー作です。"},
+  {"type": "choice", "question": "2択の例：1年は何日？（うるう年を除く）",
+   "choices": ["365日", "366日"], "answers": "A", "seconds": 20}
+]
